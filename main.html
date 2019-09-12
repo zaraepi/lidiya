@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- <meta name="viewport"content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/base-min.css">
@@ -14,7 +13,6 @@
     <link href="https://fonts.googleapis.com/css?family=Antic+Didone" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Antic+Didone&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="datepicker/datepicker.css"> -->
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <!-- tilt css -->
@@ -25,6 +23,8 @@
     <link rel="stylesheet" href="css/moderat.css">
     <link rel="stylesheet" href="libs/pace/themes/white/pace-theme-flash.css">
     <link rel="stylesheet" href="libs/materialize/css/materialize.min.css?v=master">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://unpkg.com/aos@2.3.0/dist/aos.css'>
     <title>lidiyayudina</title>
 </head>
 
@@ -36,7 +36,6 @@
             <li class="menu-item"><a href="#" data-to=".section3" class="menu-link">About</a></li>
             <li class="menu-item"><a href="#" data-to=".section4" class="menu-link">Art Class</a></li>
             <li class="menu-item"><a href="#" data-to=".section5" class="menu-link">Contact</a></li>
-            <!-- <li class="menu-item"><a href="#"data-to=".section6"class="menu-link">Contact</a></li> -->
         </ul>
     </div>
     <!-- section1 -->
@@ -51,10 +50,12 @@
                 </div>
             </div>
             <div class="main">
-                <div id="nav-icon1">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <div class="nav-sub-cont">
+                    <div id="nav-icon1">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -65,99 +66,78 @@
         <div class="background-image">
             <div class="text-main text-main2">
                 <div class="lorem text-section2-A">Showcase</div>
-                <!-- <div class="lorem text-section2 postY"data-move-up-speed="2.5">Are you visiting New Zealand?<br>Find your accomodation cost, right here.</div> -->
-                <!-- <div class="lorem text-section2 postY"data-move-up-speed="2.5"></div> -->
             </div>
-            <img class="img1" data-speed-horizontal="-2" src="images/desktop/desktop-landB.jpg" alt="">
-            <div class="title">
-                <div class="spanfonttitle">
-                    <span class="SpanFontFirst">october 10 2019</span>
-                    <div class="UnderlineIcon"></div>
-                    <span class="SpanFontSecond">december 10 2019</span>
-                </div>
-                <!--  <h4 class="showcase-start-date">october 10 2019</h4>
-<span><img src="images/desktop/underline.png"alt="underline"height="42px"width="42px"></span>
-<h4 class="showcase-end-date">december 15 2019</h4> -->
-                <p> It is an image, poetics, soul, customs, and even humour of the Russian people.</p>
-                <h4>Romantic Russia</h4>
-                <!-- <a class="ReadMore">Read More</a> dont use this-->
-                <div class="button-showcase">
-                    <button class="pure-button bounce" id="ReadMore-A">Read More</button>
-                    <!-- <div class="ReadMore-description-left-A"data-state="close">
-<p>Lorem ipsum dolor sit amet, urna quis ornare nulla tellus, nunc convallis in varius et a purus, congue urna wisi dolor. Libero mi sodales fusce sed, sit conubia nunc ipsum placerat, non odio urna, dictum odio aenean. Faucibus ultrices vulputate, quisque ut eget venenatis integer, egestas pede quis adipiscing, nibh lobortis commodo. Ut justo malesuada neque ac consectetuer, donec ullamcorper semper in leo id, id ratione vulputate quam nonummy ultricies pulvinar, aenean mattis arcu. Scelerisque fugit, etiam sit, arcu amet nisl mauris curabitur nec fusce, malesuada sed.</p>
-</div> -->
-                    <!-- <button class="pure-button bounce"id="ReadMore-A">Buy now</button>enable this later -->
-                    <!-- <button class="pure-button bounce"id="ReadMore-A-BookShow">Book show</button> enable this later-->
-                    <div class="ReadMore-description-left-A" data-state="close">
-                        <p>Lorem ipsum dolor sit amet, urna quis ornare nulla tellus, nunc convallis in varius et a purus, congue urna wisi dolor. Libero mi sodales fusce sed, sit conubia nunc ipsum placerat, non odio urna, dictum odio aenean. Faucibus ultrices vulputate, quisque ut eget venenatis integer, egestas pede quis adipiscing, nibh lobortis commodo. Ut justo malesuada neque ac consectetuer, donec ullamcorper semper in leo id, id ratione vulputate quam nonummy ultricies pulvinar, aenean mattis arcu. Scelerisque fugit, etiam sit, arcu amet nisl mauris curabitur nec fusce, malesuada sed.</p>
+            <div class="flex-container">
+                <img class="img1" data-speed-horizontal="-2" data-aos="fade-up" src="images/desktop/desktop-landB.jpg" alt="">
+                <div class="title title-1">
+                    <div class="spanfonttitle">
+                        <span class="SpanFontFirst" data-speed-horizontal="-2">February 10 2020</span>
+                        <div class="UnderlineIcon"></div>
+                        <span class="SpanFontSecond">december 10 2020</span>
+                    </div>
+                    <p class="p-title">There is something so much greater than just simply the view being depicted.</p>
+                    <h4>Romantic Russia</h4>
+                    <div class="button-showcase">
+                        <button class="pure-button bounce" id="ReadMore-A">Read More</button>
+                        <div class="ReadMore-description-left-A" data-state="close">
+                            <p>Half of the painting has unmixed transparent green pigment, and the changing hue and high chroma in the glazing on the whites of the tree-trunks. Simply mesmerizing. </p>
+                        </div>
                     </div>
                 </div>
-                <!--  <div id="location">
-<i class="fas fa-map-marker-alt"></i><span class="location-p">New Yudina Place</span> -->
-                <!-- other design -->
-                <!-- <p class="location-p">Art Didone Room</p> other design alternative-->
-                <!-- <a href="#"data-to=".section5"class="menu-link">Art Didone Room</a> -->
-                <!-- <i class="fas fa-map-marker-alt"></i><span>Art Didone Room</span> -->
-                <!-- other design -->
-                <!--                 </div> -->
             </div>
         </div>
-        <!-- <div class="text-main">
-<div class="lorem section2-sub-heading text-section-sub-heading"data-state="close">
-</div>
-</div> -->
         <!-- img2 -->
-        <img class="img2" data-speed-horizontal="-2" src="images/desktop/desktop-landD.jpg" alt="">
-        <div class="title">
-            <div class="spanfonttitle">
-                <span class="SpanFontFirst">september 06 2019</span>
-                <div class="UnderlineIcon"></div>
-                <span class="SpanFontSecond">september 28 2019</span>
-            </div>
-            <p> It is an image, poetics, soul, customs, and even humour of the Russian people.</p>
-            <h4>Romantic Russia</h4>
-            <!-- <a class="ReadMore">Read More</a> -->
-            <button class="pure-button bounce" id="ReadMore-B">Read More</button>
-            <!-- <button class="pure-button bounce" id="ReadMore-B-BookShow">Buy now</button> -->
-            <div class="ReadMore-description-left-B" data-state="close">
-                <p>Lorem ipsum dolor sit amet, urna quis ornare nulla tellus, nunc convallis in varius et a purus, congue urna wisi dolor. Libero mi sodales fusce sed, sit conubia nunc ipsum placerat, non odio urna, dictum odio aenean. Faucibus ultrices vulputate, quisque ut eget venenatis integer, egestas pede quis adipiscing, nibh lobortis commodo. Ut justo malesuada neque ac consectetuer, donec ullamcorper semper in leo id, id ratione vulputate quam nonummy ultricies pulvinar, aenean mattis arcu. Scelerisque fugit, etiam sit, arcu amet nisl mauris curabitur nec fusce, malesuada sed.</p>
+        <div class="flex-container img-container-top">
+            <img class="img2" data-speed-horizontal="-2" src="images/desktop/desktop-landD.jpg" alt="">
+            <div class="title title-2">
+                <div class="spanfonttitle">
+                    <span class="SpanFontFirst">september 06 2020</span>
+                    <div class="UnderlineIcon"></div>
+                    <span class="SpanFontSecond">september 28 2020</span>
+                </div>
+                <p class="p-title"> It is an image, poetics, soul, customs, and even humour of the Russian people.</p>
+                <h4>Romantic Russia</h4>
+                <button class="pure-button bounce" id="ReadMore-B">Read More</button>
+                <div class="ReadMore-description-left-B" data-state="close">
+                    <p>Lorem ipsum dolor sit amet, urna quis ornare nulla tellus, nunc convallis in varius et a purus, congue urna wisi dolor. Libero mi sodales fusce sed, sit conubia nunc ipsum placerat, non odio urna, dictum odio aenean. Faucibus ultrices vulputate, quisque ut eget venenatis integer, egestas pede quis adipiscing, nibh lobortis commodo. Ut justo malesuada neque ac consectetuer, donec ullamcorper semper in leo id, id ratione vulputate quam nonummy ultricies pulvinar, aenean mattis arcu. Scelerisque fugit, etiam sit, arcu amet nisl mauris curabitur nec fusce, malesuada sed.</p>
+                </div>
             </div>
         </div>
         <!-- img3 -->
-        <img class="img3" data-speed-horizontal="-2" src="images/desktop/desktop-landA.jpg" alt="">
-        <div class="title">
-            <div class="spanfonttitle">
-                <span class="SpanFontFirst">october 02 2019</span>
-                <div class="UnderlineIcon"></div>
-                <span class="SpanFontSecond">december 27 2019</span>
-            </div>
-            <p> It is an image, poetics, soul, customs, and even humour of the Russian people.</p>
-            <h4>Romantic Russia</h4>
-            <!-- <a class="ReadMore">Read More</a> -->
-            <button class="pure-button bounce" id="ReadMore-C">Read More</button>
-            <!-- <button class="pure-button bounce" id="ReadMore-C-BookShow">Buy now</button> -->
-            <div class="ReadMore-description-left-C" data-state="close">
-                <p>Lorem ipsum dolor sit amet, urna quis ornare nulla tellus, nunc convallis in varius et a purus, congue urna wisi dolor. Libero mi sodales fusce sed, sit conubia nunc ipsum placerat, non odio urna, dictum odio aenean. Faucibus ultrices vulputate, quisque ut eget venenatis integer, egestas pede quis adipiscing, nibh lobortis commodo. Ut justo malesuada neque ac consectetuer, donec ullamcorper semper in leo id, id ratione vulputate quam nonummy ultricies pulvinar, aenean mattis arcu. Scelerisque fugit, etiam sit, arcu amet nisl mauris curabitur nec fusce, malesuada sed.</p>
+        <div class="flex-container img-container-top">
+            <img class="img3" data-speed-horizontal="-2" data-aos="slide-up" src="images/desktop/desktop-landA.jpg" alt="">
+            <div class="title title-3">
+                <div class="spanfonttitle">
+                    <span class="SpanFontFirst">october 02 2020</span>
+                    <div class="UnderlineIcon"></div>
+                    <span class="SpanFontSecond">december 27 2020</span>
+                </div>
+                <p class="p-title"> It is an image, poetics, soul, customs, and even humour of the Russian people.</p>
+                <h4>Romantic Russia</h4>
+                <button class="pure-button bounce" id="ReadMore-C">Read More</button>
+                <div class="ReadMore-description-left-C" data-state="close">
+                    <p>Lorem ipsum dolor sit amet, urna quis ornare nulla tellus, nunc convallis in varius et a purus, congue urna wisi dolor. Libero mi sodales fusce sed, sit conubia nunc ipsum placerat, non odio urna, dictum odio aenean. Faucibus ultrices vulputate, quisque ut eget venenatis integer, egestas pede quis adipiscing, nibh lobortis commodo. Ut justo malesuada neque ac consectetuer, donec ullamcorper semper in leo id, id ratione vulputate quam nonummy ultricies pulvinar, aenean mattis arcu. Scelerisque fugit, etiam sit, arcu amet nisl mauris curabitur nec fusce, malesuada sed.</p>
+                </div>
             </div>
         </div>
         <!-- img4 -->
-        <img class="img4" data-speed-horizontal="-2" src="images/desktop/desktop-landE.jpg" alt="">
-        <div class="title">
-            <div class="spanfonttitle">
-                <span class="SpanFontFirst">january 15 2020</span>
-                <div class="UnderlineIcon"></div>
-                <span class="SpanFontSecond">february 06 2020</span>
+        <div class="flex-container img-container-top">
+            <img class="img4" data-speed-horizontal="-2" data-aos="fade-left" src="images/desktop/desktop-landE.jpg" alt="">
+            <div class="title title-4">
+                <div class="spanfonttitle">
+                    <span class="SpanFontFirst">january 15 2020</span>
+                    <div class="UnderlineIcon"></div>
+                    <span class="SpanFontSecond">february 06 2020</span>
+                </div>
+                <p class="p-title"> It is an image, poetics, soul, customs, and even humour of the Russian people.</p>
+                <h4>Romantic Russia</h4>
+                <button class="pure-button bounce" id="ReadMore-D">Read More</button>
+                <div class="ReadMore-description-left-D" data-state="close">
+                    <p>Lorem ipsum dolor sit amet, urna quis ornare nulla tellus, nunc convallis in varius et a purus, congue urna wisi dolor. Libero mi sodales fusce sed, sit conubia nunc ipsum placerat, non odio urna, dictum odio aenean. Faucibus ultrices vulputate, quisque ut eget venenatis integer, egestas pede quis adipiscing, nibh lobortis commodo. Ut justo malesuada neque ac consectetuer, donec ullamcorper semper in leo id, id ratione vulputate quam nonummy ultricies pulvinar, aenean mattis arcu. Scelerisque fugit, etiam sit, arcu amet nisl mauris curabitur nec fusce, malesuada sed.</p>
+                </div>
             </div>
-            <p> It is an image, poetics, soul, customs, and even humour of the Russian people.</p>
-            <h4>Romantic Russia</h4>
-            <!-- <a class="ReadMore">Read More</a> -->
-            <button class="pure-button bounce" id="ReadMore-D">Read More</button>
-            <!-- <button class="pure-button bounce" id="ReadMore-D-BookShow">Buy now</button> -->
-            <div class="ReadMore-description-left-D" data-state="close">
-                <p>Lorem ipsum dolor sit amet, urna quis ornare nulla tellus, nunc convallis in varius et a purus, congue urna wisi dolor. Libero mi sodales fusce sed, sit conubia nunc ipsum placerat, non odio urna, dictum odio aenean. Faucibus ultrices vulputate, quisque ut eget venenatis integer, egestas pede quis adipiscing, nibh lobortis commodo. Ut justo malesuada neque ac consectetuer, donec ullamcorper semper in leo id, id ratione vulputate quam nonummy ultricies pulvinar, aenean mattis arcu. Scelerisque fugit, etiam sit, arcu amet nisl mauris curabitur nec fusce, malesuada sed.</p>
-            </div>
-            <h4 class="AllShowcase">All Showcase</h4>
         </div>
+        <h4 class="AllShowcase">All Showcase</h4>
         <div id="location">
             <i class="fas fa-map-marker-alt"></i><span class="location-p">New Yudina Place</span>
         </div>
@@ -167,93 +147,24 @@
         <div class="text-main text-main3">
             <div class="lorem text-section3-A">About</div>
             <div class="lorem text-section-sub-heading">
-                <p>
-                    Lida Yudina is a writer and a distinguished painter especially known for her paintings of domestic and suburban landscapeIn 1967 she graduated from The National Academy of Fine Art and Architecture of Ukraine (Master of Fine Arts in Oil Painting), where she was influenced by the works of the prominent impressionists.</p>
-                <p>Lidiya Yudina is focused on still-lives and landscapes, painted on location (an plein air).</p>
+                <p class="p-about">
+                    Lida Yudina is a writer and a distinguished painter especially known for her paintings of domestic and suburban landscapeIn 1967 she graduated from The National Academy of Fine Art and Architecture of Ukraine (Master of Fine Arts in Oil Painting), where she was influenced by the works of the prominent impressionists.<br><br>
+                    Lidiya Yudina is focused on still-lives and landscapes, painted on location (an plein air).</p>
             </div>
         </div>
-        <!-- <div class="image-fiordland">
-            <div class="layer-image-container">
-                <div class="image-container img-cont-section3-A"></div>
-            </div>
-            <div class="text-main-container text-main-img">
-                <div class="lorem text-section3-C text3-right-title">Fiordland</div>
-                <div class="text3-P text3-right-description">
-                    <p>Lorem ipsum dolor sit amet, urna quis ornare nulla tellus, nunc convallis in varius et a purus, congue urna wisi dolor. Libero mi sodales fusce sed, sit conubia nunc ipsum placerat, non odio urna, dictum odio aenean.</p>
-                    <div class="section3-btn-right">
-                        <button class="pure-button bounce" id="read-more-btn-right-fiordland">Read More</button>
-                    </div>
-                </div>
-                <div class="text3-read read-description-right-fiordland" data-state="close">
-                    <p>Lorem ipsum dolor sit amet, urna quis ornare nulla tellus, nunc convallis in varius et a purus, congue urna wisi dolor. Libero mi sodales fusce sed, sit conubia nunc ipsum placerat, non odio urna, dictum odio aenean. Faucibus ultrices vulputate, quisque ut eget venenatis integer, egestas pede quis adipiscing, nibh lobortis commodo. Ut justo malesuada neque ac consectetuer, donec ullamcorper semper in leo id, id ratione vulputate quam nonummy ultricies pulvinar, aenean mattis arcu. Scelerisque fugit, etiam sit, arcu amet nisl mauris curabitur nec fusce, malesuada sed.</p>
-                </div>
-            </div>
-        </div>
-        <div class="image-mtcook">
-            <div class="layer-image-container">
-                <div class="image-container img-cont-section3-B"></div>
-            </div>
-            <div class="text-main-container text-main-img">
-                <div class="lorem text-section3-C text3-right-title">Mt Cook</div>
-                <div class="text3-P text3-right-description">
-                    <p>Lorem ipsum dolor sit amet, urna quis ornare nulla tellus, nunc convallis in varius et a purus, congue urna wisi dolor. Libero mi sodales fusce sed, sit conubia nunc ipsum placerat, non odio urna, dictum odio aenean.</p>
-                    <div class="section3-btn-right">
-                        <button class="pure-button bounce" id="read-more-btn-right-mtcook">Read More</button>
-                    </div>
-                </div>
-                <div class="text3-read read-description-right-mtcook" data-state="close">
-                    <p>Lorem ipsum dolor sit amet, urna quis ornare nulla tellus, nunc convallis in varius et a purus, congue urna wisi dolor. Libero mi sodales fusce sed, sit conubia nunc ipsum placerat, non odio urna, dictum odio aenean. Faucibus ultrices vulputate, quisque ut eget venenatis integer, egestas pede quis adipiscing, nibh lobortis commodo. Ut justo malesuada neque ac consectetuer, donec ullamcorper semper in leo id, id ratione vulputate quam nonummy ultricies pulvinar, aenean mattis arcu. Scelerisque fugit, etiam sit, arcu amet nisl mauris curabitur nec fusce, malesuada sed.</p>
-                </div>
-            </div>
-        </div>
-        <div class="image-tongariro">
-            <div class="layer-image-container">
-                <div class="image-container img-cont-section3-C"></div>
-            </div>
-            <div class="text-main-container text-main-img">
-                <div class="lorem text-section3-C text3-left-title">Tongariro</div>
-                <div class="text3-P text3-left-description">
-                    <p>Lorem ipsum dolor sit amet, urna quis ornare nulla tellus, nunc convallis in varius et a purus, congue urna wisi dolor. Libero mi sodales fusce sed, sit conubia nunc ipsum placerat, non odio urna, dictum odio aenean.</p>
-                    <div class="section3-btn-left">
-                        <button class="pure-button bounce" id="read-more-btn-left-tongariro">Read More</button>
-                    </div>
-                </div>
-                <div class="text3-read read-description-left-tongariro" data-state="close">
-                    <p>Lorem ipsum dolor sit amet, urna quis ornare nulla tellus, nunc convallis in varius et a purus, congue urna wisi dolor. Libero mi sodales fusce sed, sit conubia nunc ipsum placerat, non odio urna, dictum odio aenean. Faucibus ultrices vulputate, quisque ut eget venenatis integer, egestas pede quis adipiscing, nibh lobortis commodo. Ut justo malesuada neque ac consectetuer, donec ullamcorper semper in leo id, id ratione vulputate quam nonummy ultricies pulvinar, aenean mattis arcu. Scelerisque fugit, etiam sit, arcu amet nisl mauris curabitur nec fusce, malesuada sed.</p>
-                </div>
-            </div>
-        </div>
-        <div class="image-queenstown">
-            <div class="layer-image-container">
-                <div class="image-container img-cont-section3-D"></div>
-            </div>
-            <div class="text-main-container text-main-img">
-                <div class="lorem text-section3-C text3-left-title qt-title">Queens<br>town</div>
-                <div class="text3-P text3-left-description">
-                    <p>Lorem ipsum dolor sit amet, urna quis ornare nulla tellus, nunc convallis in varius et a purus, congue urna wisi dolor. Libero mi sodales fusce sed, sit conubia nunc ipsum placerat, non odio urna, dictum odio aenean.</p>
-                    <div class="section3-btn-left">
-                        <button class="pure-button bounce" id="read-more-btn-left-queenstown">Read More</button>
-                    </div>
-                </div>
-                <div class="text3-read read-description-left-queenstown" data-state="close">
-                    <p>Lorem ipsum dolor sit amet, urna quis ornare nulla tellus, nunc convallis in varius et a purus, congue urna wisi dolor. Libero mi sodales fusce sed, sit conubia nunc ipsum placerat, non odio urna, dictum odio aenean. Faucibus ultrices vulputate, quisque ut eget venenatis integer, egestas pede quis adipiscing, nibh lobortis commodo. Ut justo malesuada neque ac consectetuer, donec ullamcorper semper in leo id, id ratione vulputate quam nonummy ultricies pulvinar, aenean mattis arcu. Scelerisque fugit, etiam sit, arcu amet nisl mauris curabitur nec fusce, malesuada sed.</p>
-                </div>
-            </div>
-        </div>
-        <div class="more-places"></div> -->
-        <div class="image-container img-cont-section4-A img-homesA-A"></div>
+        <div class="image-container img-cont-section4-A img-homesA-A" data-aos="fade-up"></div>
     </div>
     <!-- section4 -->
     <div class="container section4">
         <div class="lorem text-section4-A">Art Class</div>
         <div class="text-main">
             <div class="lorem text-section-sub-heading" data-state="close">
-                <p>Lorem ipsum dolor sit amet, urna quis ornare nulla tellus, nunc convallis in varius et a purus, congue urna wisi dolor. Libero mi sodales fusce sed, sit conubia nunc ipsum placerat, non odio urna, dictum odio aenean. Faucibus ultrices vulputate, quisque ut eget venenatis integer, egestas pede quis adipiscing, nibh lobortis commodo.</p><br>
-                <p>Lorem ipsum dolor sit amet, urna quis ornare nulla tellus, nunc convallis in varius et a purus, congue urna wisi dolor. Libero mi sodales fusce sed, sit conubia nunc ipsum placerat, non odio urna, dictum odio aenean. Faucibus ultrices vulputate, quisque ut eget venenatis integer, egestas pede quis adipiscing, nibh lobortis commodo.</p>
+                <p class="p-about">Lorem ipsum dolor sit amet, urna quis ornare nulla tellus, nunc convallis in varius et a purus, congue urna wisi dolor. Libero mi sodales fusce sed, sit conubia nunc ipsum placerat, non odio urna, dictum odio aenean. Faucibus ultrices vulputate, quisque ut eget venenatis integer, egestas pede quis adipiscing, nibh lobortis commodo.<br><br>
+                    Lorem ipsum dolor sit amet, urna quis ornare nulla tellus, nunc convallis in varius et a purus, congue urna wisi dolor. Libero mi sodales fusce sed, sit conubia nunc ipsum placerat, non odio urna, dictum odio aenean. Faucibus ultrices vulputate, quisque ut eget venenatis integer, egestas pede quis adipiscing, nibh lobortis commodo.</p>
             </div>
         </div>
         <!-- Swiper -->
-        <div class="swiper-container">
+        <div class="swiper-container" data-aos="fade-up">
             <div class="swiper-wrapper">
                 <div class="swiper-slide s1 slide-1">
                     <div class="lorem text-section4-A beautiful-homes title-on-box tob-left subtitle">24Jan<br>Acrylic</div>
@@ -289,87 +200,12 @@
             <!-- Add Pagination -->
             <!-- <div class="swiper-pagination"></div> -->
         </div>
-        <!-- <div class="swiper-cont-hotel">
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide s1 slide-1-hotel">
-                        <div class="lorem text-section4-A beautiful-homes title-on-box tob-left subtitle">Langham, <br>Auckland</div>
-                    </div>
-                    <div class="swiper-slide s1 slide-2-hotel">
-                        <div class="lorem text-section4-A beautiful-homes title-on-box tob-left subtitle">W. Elm, <br>Wellington</div>
-                    </div>
-                    <div class="swiper-slide s1 slide-3-hotel">
-                        <div class="lorem text-section4-A beautiful-homes title-on-box tob-left subtitle">S.Apls, <br>Queenstown</div>
-                    </div>
-                    <div class="swiper-slide s1 slide-4-hotel">
-                        <div class="lorem text-section4-A beautiful-homes title-on-box tob-left subtitle">Marvel, <br>Nelson</div>
-                    </div>
-                    <div class="swiper-slide s1 slide-5-hotel">
-                        <div class="lorem text-section4-A beautiful-homes title-on-box tob-left subtitle">Oppenheim, <br>Dunedin</div>
-                    </div>
-                    <div class="swiper-slide s1 slide-6-hotel">
-                        <div class="lorem text-section4-A beautiful-homes title-on-box tob-left subtitle">S.Heaven, <br>Tauranga</div>
-                    </div>
-                    <div class="swiper-slide s1 slide-7-hotel">
-                        <div class="lorem text-section4-A beautiful-homes title-on-box tob-left subtitle">Callas, <br>Napier</div>
-                    </div>
-                    <div class="swiper-slide s1 slide-8-hotel">
-                        <div class="lorem text-section4-A beautiful-homes title-on-box tob-left subtitle">Bauhaus, <br>Fiordland</div>
-                    </div>
-                    <div class="swiper-slide s1 slide-9-hotel">
-                        <div class="lorem text-section4-A beautiful-homes title-on-box tob-left subtitle">Chateau, <br>Tongariro</div>
-                    </div>
-                    <div class="swiper-slide s1 slide-10-hotel">
-                        <div class="lorem text-section4-A beautiful-homes title-on-box tob-left subtitle">Hermitage, <br>Mt.Cook</div>
-                    </div>
-                </div>
-               
-            </div>
-        </div> -->
-        <!--  <div class="swiper-cont-hostel">
-            <div class="swiper-container s2">
-                <div class="swiper-wrapper s2 ">
-                    <div class="swiper-slide s2 slide-B-1-hostel">
-                        <div class="lorem text-section4-A beautiful-homes title-on-box tob-left subtitle subtitle-s2">West Seven, <br>Queenstown</div>
-                    </div>
-                    <div class="swiper-slide s2 slide-B-2-hostel">
-                        <div class="lorem text-section4-A beautiful-homes title-on-box tob-left subtitle subtitle-s2">Hobart, <br>Nelson</div>
-                    </div>
-                    <div class="swiper-slide s2 slide-B-3-hostel">
-                        <div class="lorem text-section4-A beautiful-homes title-on-box tob-left subtitle subtitle-s2">Baroque, <br>Queenstown</div>
-                    </div>
-                    <div class="swiper-slide s2 slide-B-4-hostel">
-                        <div class="lorem text-section4-A beautiful-homes title-on-box tob-left subtitle subtitle-s2">Chill Out, <br>Christchurch</div>
-                    </div>
-                    <div class="swiper-slide s2 slide-B-5-hostel">
-                        <div class="lorem text-section4-A beautiful-homes title-on-box tob-left subtitle subtitle-s2">Oasis, <br>Tongariro</div>
-                    </div>
-                    <div class="swiper-slide s2 slide-B-6-hostel">
-                        <div class="lorem text-section4-A beautiful-homes title-on-box tob-left subtitle subtitle-s2">Oasis, <br>Auckland</div>
-                    </div>
-                    <div class="swiper-slide s2 slide-B-7-hostel">
-                        <div class="lorem text-section4-A beautiful-homes title-on-box tob-left subtitle subtitle-s2">Richmond, <br>Wellington</div>
-                    </div>
-                    <div class="swiper-slide s2 slide-B-8-hostel">
-                        <div class="lorem text-section4-A beautiful-homes title-on-box tob-left subtitle subtitle-s2">St Haven, <br>Dunedin</div>
-                    </div>
-                    <div class="swiper-slide s2 slide-B-9-hostel">
-                        <div class="lorem text-section4-A beautiful-homes title-on-box tob-left subtitle subtitle-s2">Snow Mountain, <br>Mt Cook</div>
-                    </div>
-                    <div class="swiper-slide s2 slide-B-10-hostel">
-                        <div class="lorem text-section4-A beautiful-homes title-on-box tob-left subtitle subtitle-s2">Wolf Rise, <br>Queenstown</div>
-                    </div>
-                </div>
-                <div class="swiper-button-next s2"></div>
-                <div class="swiper-button-prev s2"></div>
-            </div>
-        </div> -->
         <div class="text-main">
             <div class="lorem text-section-sub-heading" data-state="close">
-                <p>Lorem ipsum dolor sit amet, urna quis ornare nulla tellus, nunc convallis in varius et a purus, congue urna wisi dolor. Libero mi sodales fusce sed, sit conubia nunc ipsum placerat, non odio urna, dictum odio aenean. Faucibus ultrices vulputate, quisque ut eget venenatis integer, egestas pede quis adipiscing, nibh lobortis commodo.</p>
+                <p class="p-about">Lorem ipsum dolor sit amet, urna quis ornare nulla tellus, nunc convallis in varius et a purus, congue urna wisi dolor. Libero mi sodales fusce sed, sit conubia nunc ipsum placerat, non odio urna, dictum odio aenean. Faucibus ultrices vulputate, quisque ut eget venenatis integer, egestas pede quis adipiscing, nibh lobortis commodo.</p>
             </div>
         </div>
-        <div class="image-container img-cont-section4-A img-homesA-D" id="section-artwork"></div>
+        <div class="image-container img-cont-section4-A img-homesA-D" data-aos="fade-up" id="section-artwork"></div>
     </div>
     <!-- section5 -->
     <div class="container section5">
@@ -377,7 +213,7 @@
         <div class="section5-heading">
             <div class="text-main">
                 <div class="lorem text-section-sub-heading" data-state="close">
-                    <p>Lorem ipsum dolor sit amet, urna quis ornare nulla tellus, nunc convallis in varius et a purus, congue urna wisi dolor. Libero mi sodales fusce sed, sit conubia nunc ipsum placerat, non odio urna, dictum odio aenean. Faucibus ultrices vulputate, quisque ut eget venenatis integer, egestas pede quis adipiscing, nibh lobortis commodo.</p><br>
+                    <p class="p-about">Lorem ipsum dolor sit amet, urna quis ornare nulla tellus, nunc convallis in varius et a purus, congue urna wisi dolor. Libero mi sodales fusce sed, sit conubia nunc ipsum placerat, non odio urna, dictum odio aenean. Faucibus ultrices vulputate, quisque ut eget venenatis integer, egestas pede quis adipiscing, nibh lobortis commodo.</p>
                 </div>
             </div>
         </div>
@@ -448,34 +284,12 @@
             </section>
         </div>
         <!-- contact end -->
-        <!--  <div class="get-in-touch contact-image">
-            <div class="lorem text-section4-A beautiful-homes contact">Get in<br> touch</div>
-        </div> -->
-        <!-- <div class="contact-details contact-image">
-            <div class="lorem text-section4-A beautiful-homes contact">General<br> enquiries<br>+64 9 914 4780/<br>+64 4 462 8000</div>
-        </div> -->
         <footer>
             <div class="container">
                 <div class="row">
                     <div class="col s12 l6">&copy; 2010—2019 L Yudina</div>
                 </div>
             </div>
-            <!-- <div class="list-container">
-                <div class="menu-selection">
-                    <p>Home</p>
-                    <p>Cost</p>
-                    <p>Places</p>
-                    <p>Homes</p>
-                    <p>Contact</p>
-                </div> -->
-            <!--  <div class="find-us">
-                    <address>Instagram</address>
-                    <address>Twitter</address>
-                    <p>Youtube</p>
-                    <address>Facebook</address>
-                    <p>GooglePlus</p>
-                </div> -->
-            <!-- </div> -->
         </footer>
     </div>
     <script src="js/tiltfx.js"></script>
@@ -492,10 +306,8 @@
     <script src="libs/jquery/jquery.min.js"></script>
     <script src="libs/lodash/lodash.min.js"></script>
     <script src="libs/materialize/js/materialize.min.js?v=master"></script>
-    <!-- the script below must be at the most bottom of all script. or else it wont run, because google map section below must be separated from the script above -->
+    <script src='https://unpkg.com/aos@2.3.0/dist/aos.js'></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArB4g0FzPbaZmqkLFdSRGKTJ_hwDS8474&callback=initMap" type="text/javascript"></script>
-    <!--    -36.843197, 174.766831
-        tmnz location on map -->
     <script type="text/javascript">
     // When the window has finished loading create our google map below
     // google.maps.event.addDomListener(window, 'load', init);
@@ -515,123 +327,6 @@
         };
 
 
-        //         styles: [
-        //     {
-        //         "featureType": "all",
-        //         "elementType": "geometry",
-        //         "stylers": [
-        //             {
-        //                 "color": "#60a286"
-        //             }
-        //         ]
-        //     },
-        //     {
-        //         "featureType": "all",
-        //         "elementType": "labels.text.fill",
-        //         "stylers": [
-        //             {
-        //                 "gamma": 0.01
-        //             },
-        //             {
-        //                 "lightness": 20
-        //             }
-        //         ]
-        //     },
-        //     {
-        //         "featureType": "all",
-        //         "elementType": "labels.text.stroke",
-        //         "stylers": [
-        //             {
-        //                 "saturation": -31
-        //             },
-        //             {
-        //                 "lightness": -33
-        //             },
-        //             {
-        //                 "weight": 2
-        //             },
-        //             {
-        //                 "gamma": 0.8
-        //             }
-        //         ]
-        //     },
-        //     {
-        //         "featureType": "all",
-        //         "elementType": "labels.icon",
-        //         "stylers": [
-        //             {
-        //                 "visibility": "off"
-        //             }
-        //         ]
-        //     },
-        //     {
-        //         "featureType": "landscape",
-        //         "elementType": "geometry",
-        //         "stylers": [
-        //             {
-        //                 "lightness": 30
-        //             },
-        //             {
-        //                 "saturation": 30
-        //             }
-        //         ]
-        //     },
-        //     {
-        //         "featureType": "poi",
-        //         "elementType": "geometry",
-        //         "stylers": [
-        //             {
-        //                 "saturation": 20
-        //             }
-        //         ]
-        //     },
-        //     {
-        //         "featureType": "poi.park",
-        //         "elementType": "geometry",
-        //         "stylers": [
-        //             {
-        //                 "lightness": 20
-        //             },
-        //             {
-        //                 "saturation": -20
-        //             }
-        //         ]
-        //     },
-        //     {
-        //         "featureType": "road",
-        //         "elementType": "geometry",
-        //         "stylers": [
-        //             {
-        //                 "lightness": 10
-        //             },
-        //             {
-        //                 "saturation": -30
-        //             }
-        //         ]
-        //     },
-        //     {
-        //         "featureType": "road",
-        //         "elementType": "geometry.stroke",
-        //         "stylers": [
-        //             {
-        //                 "saturation": 25
-        //             },
-        //             {
-        //                 "lightness": 25
-        //             }
-        //         ]
-        //     },
-        //     {
-        //         "featureType": "water",
-        //         "elementType": "all",
-        //         "stylers": [
-        //             {
-        //                 "lightness": -20
-        //             }
-        //         ]
-        //     }
-        // ]
-        // };
 
 
         // Get the HTML DOM element that will contain your map
@@ -644,11 +339,11 @@
             // position: new google.maps.LatLng(-36.843197, 174.766831),
             position: new google.maps.LatLng(-36.841895, 174.756578),
             map: map,
-            
+
             title: 'Snazzy!'
         });
 
-        
+
 
 
     }

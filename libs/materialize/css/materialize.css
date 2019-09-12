@@ -3900,6 +3900,8 @@ input[type=range] + .thumb {
     margin-left: auto;
     left: auto;
     right: auto;
+    
+
   }
   .row .col.l4 {
     width: 33.3333333333%;

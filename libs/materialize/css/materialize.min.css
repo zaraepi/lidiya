@@ -3740,7 +3740,9 @@ input[type=range]+.thumb {
         width: 25%;
         margin-left: auto;
         left: auto;
-        right: auto
+        right: auto;
+         word-wrap: break-word !important;
+    text-align: justify !important;
     }
 
     .row .col.l4 {
